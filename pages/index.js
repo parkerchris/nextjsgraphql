@@ -70,7 +70,7 @@ export default function Home({properties}) {
       <main className={styles.main}>
         <h1>Properties:</h1>
         {properties.map((property) => (
-          <h1>{property.street_address}, {property.city}</h1>
+          <h1>{property.street_address} {property.city}, {property.zip_code}</h1>
         ))}
       </main>
     </div>

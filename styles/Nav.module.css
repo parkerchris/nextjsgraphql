@@ -1,0 +1,28 @@
+
+
+.container {
+    height: 100vh;
+    width: 200px;
+    left: 0;
+    top: 64px;
+    display: flex;
+    align-items: center;
+}
+
+.innerContainer {
+    width: 80%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 25px;
+    margin-top: 25px;
+    border-right: 1px solid rgb(221, 221, 221);
+}
+
+.linkGroup {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    margin-bottom: 8px;
+}
