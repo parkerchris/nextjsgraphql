@@ -67,7 +67,7 @@ export default function Home({properties}) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={styles.main}>
+      <main /* className={styles.main} */>
         <h1>Properties:</h1>
         {properties.map((property) => (
           <h1>{property.street_address} {property.city}, {property.zip_code}</h1>

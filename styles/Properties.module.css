@@ -1,13 +1,19 @@
 .container {
-    margin-top: 500px;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    height: 100%;
+    width: 100%;
 }
 
+.propertyContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-basis: 50%;
 
-.testtest {
-    position: absolute;
-    top: 400px;
-    left: 700px
+}
+
+.mapContainer {
+    background-color: black;
+    flex-basis: 50%;
 }

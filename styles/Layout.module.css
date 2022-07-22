@@ -1,0 +1,113 @@
+
+.gridContainer {
+
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: 64px 1fr 50px;
+    grid-template-areas: 
+        "head head"
+        "nav content"
+        "foot foot";
+}
+
+.header {
+    grid-area: head;
+    border-bottom: 1px solid rgb(221, 221, 221);
+    background-color: rgb(247, 247, 247);
+    display: flex;
+    justify-content: center;
+}
+
+.nav {
+    grid-area: nav;
+
+}
+
+.content {
+    grid-area: content;
+}
+
+.footer {
+    grid-area: foot;
+    border-top: 1px solid rgb(221, 221, 221);
+    background-color: rgb(247, 247, 247);
+}
+
+
+/* Header******************************************* */
+
+.headerContainer {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.searchbar {
+    width: 600px;
+    height: 40px;
+    border: 1px solid rgb(221, 221, 221);
+    border-radius: 6px;
+}
+
+.avatar {
+    background-color: black;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.avatarDefault {
+    font-weight: 900;
+    color: rgb(247, 247, 247);
+}
+
+.anchor {
+    text-decoration: none;
+}
+
+/* Nav section  */
+
+.innerContainer {
+    width: 80%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 25px;
+    margin-top: 25px;
+    border-right: 1px solid rgb(221, 221, 221);
+}
+
+.linkGroup {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    margin-bottom: 14px;
+    height: auto;
+    width: 140px;
+    border-radius: 6px;
+}
+
+.linkGroup:hover {
+    background-color: rgb(247, 247, 247);
+
+}
+
+
+.font {
+    font-weight: 400;
+    color: black;
+    margin-left: 0.5rem;
+}

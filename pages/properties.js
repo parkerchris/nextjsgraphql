@@ -1,10 +1,8 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import { GraphQLClient, gql } from 'graphql-request'
-import Header from '../components/Header'
-import Footer from '../components/Footer'
-import Nav from '../components/Nav'
 import PropertyCard from '../components/PropertyCard'
+import Layout from '../components/Layout'
 import styles from '../styles/Properties.module.css'
 
 
@@ -42,11 +40,17 @@ return{
 
 export default function Properties({properties}) {
     return (
-        <div>
-            <Header></Header>
-            <Nav/>
-            <div className={styles.testtest}><PropertyCard/></div>
-            <Footer></Footer> 
-        </div>  
+          <Layout>
+            <div className={styles.container}>
+              <div className={styles.propertyContainer}>
+                <PropertyCard/>
+                <PropertyCard/>
+                <PropertyCard/>
+                
+              </div>
+              <div className={styles.mapContainer}></div>
+            </div>
+          </Layout>
+
     )
   }
