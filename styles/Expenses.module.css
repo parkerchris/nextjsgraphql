@@ -1,0 +1,45 @@
+.mainContainer {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.tableContainer {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.table {
+    table-layout: fixed;
+    width: 800px;
+    border-collapse: collapse;
+}
+
+.th {
+    width: 20%;
+}
+
+.thtd {
+    padding: 20px;
+    text-align: center;
+}
+
+.thtd:hover {
+    /* background-color: rgb(247, 247, 247); */
+}
+
+.tr {
+    border: 1px solid rgb(221, 221, 221);
+}
+
+.tr:hover{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    /* box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px; */
+}
