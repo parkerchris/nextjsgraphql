@@ -4,6 +4,7 @@ import { GraphQLClient, gql } from 'graphql-request'
 import PropertyCard from '../components/PropertyCard'
 import Layout from '../components/Layout'
 import styles from '../styles/Properties.module.css'
+import lemon from '../public/Revised_Lemon.png'
 
 
 
@@ -41,15 +42,26 @@ return{
 export default function Properties({properties}) {
     return (
           <Layout>
-            <div className={styles.container}>
-              <div className={styles.propertyContainer}>
-                <PropertyCard/>
-                <PropertyCard/>
-                <PropertyCard/>
-                
+              <div className={styles.container}>
+                <div className={styles.propertyContainer}>
+                  <div className={styles.propertyContainerTop}>
+                    <button className={styles.buttonOne}>Add a property</button>
+                    <button className={styles.buttonTwo}>Filter</button>
+                  </div>
+                  <div className={styles.propertyContainerMiddle}>
+                    
+                  </div>
+                  <div className={styles.propertyContainerBottom}>
+                    <Image
+                      alt={`Guy sitting on bench in front of homes`}
+                      src={lemon}
+                      layout={`responsive`}
+                    />
+                  </div>
+                  
+                </div>
+                <div className={styles.mapContainer}><span className={styles.dummy}>THIS IS A MAP</span></div>
               </div>
-              <div className={styles.mapContainer}></div>
-            </div>
           </Layout>
 
     )

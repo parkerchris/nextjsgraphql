@@ -1,19 +1,78 @@
 .container {
     display: flex;
-    height: 100%;
-    width: 100%;
+   height: 100%;
+   width: 100%;
 }
 
 .propertyContainer{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    align-items: flex-start;
     flex-basis: 50%;
-
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .mapContainer {
-    background-color: black;
     flex-basis: 50%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Property Container */
+
+.propertyContainerTop {
+    height: 150px;
+    width: 100%;
+    background-color: rgb(255,255,255);
+    border-bottom: 1px solid rgb(221, 221, 221);
+    align-self: flex-start;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.propertyContainerMiddle {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255,255,255);
+}
+
+.propertyContainerBottom {
+    align-self: flex-end;
+    width: 100%;
+    height: auto;
+}
+
+
+/* Property Container top */
+
+.buttonOne {
+    height: 48px;
+    border: 1px solid rgb(221, 221, 221);
+    background-color: rgb(255,255,255);
+    padding: 0 2rem;
+    border-radius: 12px;
+    font-weight: bold;
+    margin-left: 2rem;
+}
+
+.buttonTwo {
+    height: 48px;
+    border: 1px solid rgb(221, 221, 221);
+    padding: 0 2rem;
+    border-radius: 12px;
+    font-weight: bold;
+    margin-left: 2rem;
+    background-color: rgb(255,255,255);
+}
+
+
+.dummy {
+    color: white;
+    font-size: 2rem;
+    font-weight: 900;
 }

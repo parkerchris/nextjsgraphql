@@ -62,7 +62,22 @@ export default function Layout({ children }) {
                 </div>
             </div>
             <div className={styles.content}>{children}</div>
-            <div className={styles.footer}></div>
+            <div className={styles.footer}>
+                <div className={styles.innerFooterContainer}>
+                    <div className={styles.innerFooterOne}>
+                        <p className={styles.pLeft}>© Mosaic, Inc.</p>
+                        <p className={styles.pLeft}>Privacy</p>
+                        <p className={styles.pLeft}>Terms</p>
+                        <p className={styles.pLeft}>Sitemap</p>
+                        <p className={styles.pLeft}>Contact</p>
+                    </div>
+                    <div className={styles.innerFooterTwo}>
+                        <p className={styles.pRight}>English</p>
+                        <p className={styles.pRight}>Support & Resources</p>
+                        <p className={styles.pRight}></p>
+                    </div>
+                </div>
+            </div>
         </div>
     )
 }
