@@ -8,7 +8,8 @@ import { FaPaintRoller } from "react-icons/fa";
 import { FaMapPin } from "react-icons/fa";
 import { RiHome2Fill } from "react-icons/ri";
 import { BiGlobe } from "react-icons/bi";
-import { MdOutlineKeyboardArrowUp } from "react-icons/md";
+import { IoIosArrowUp } from "react-icons/io";
+
 
 
 export default function Layout({ children }) {
@@ -77,7 +78,7 @@ export default function Layout({ children }) {
                         <BiGlobe />
                         <p className={styles.pRight}>English</p>
                         <p className={styles.pRight}>Support & Resources</p>
-                        <MdOutlineKeyboardArrowUp />
+                        <IoIosArrowUp />
                     </div>
                 </div>
             </div>
