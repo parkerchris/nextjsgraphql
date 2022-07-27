@@ -18,12 +18,20 @@
 
 .table {
     table-layout: fixed;
-    width: 800px;
+    width: 1000px;
     border-collapse: collapse;
+}
+
+.theadTr {
+    background-color: rgb(247, 247, 247);
+    border: 1px solid rgb(221, 221, 221);
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
 }
 
 .th {
     width: 20%;
+    padding: 20px;
 }
 
 .thtd {

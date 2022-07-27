@@ -5,6 +5,8 @@ import PropertyCard from '../components/PropertyCard'
 import Layout from '../components/Layout'
 import styles from '../styles/Properties.module.css'
 import lemon from '../public/Revised_Lemon.png'
+import AddProperty from '../components/AddProperty'
+import { useState } from 'react'
 
 
 
@@ -40,14 +42,25 @@ return{
 
 
 export default function Properties({properties}) {
+
+    const [ showAddPropertyModal, setShowAddPropertyModal ] = useState(false);
+
+    const handleClick = () => {
+      setShowAddPropertyModal(!showAddPropertyModal)
+    }
+
     return (
           <Layout>
               <div className={styles.container}>
                 <div className={styles.propertyContainer}>
                   <div className={styles.propertyContainerTop}>
-                    <button className={styles.buttonOne}>Add a property</button>
+                    <button 
+                      className={styles.buttonOne}
+                      onClick={handleClick}
+                      >Add a property</button>
                     <button className={styles.buttonTwo}>Filter</button>
                   </div>
+                  {showAddPropertyModal && <AddProperty/>}
                   <div className={styles.propertyContainerMiddle}>
                     
                   </div>

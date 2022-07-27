@@ -30,10 +30,11 @@ export default function Layout({ children }) {
             </div>
             <div className={styles.nav}>
                 <div className={styles.innerContainer}>
+                    <p className={styles.p}>MAIN MENU</p>
                     <Link href="/">
                         <a  className={styles.anchor}>
                             <div className={styles.linkGroup}>
-                                <RiHome2Fill />
+                                <RiHome2Fill className={styles.icon}/>
                                 <h3 className={styles.font}>Home</h3>
                             </div>
                         </a>
@@ -41,23 +42,79 @@ export default function Layout({ children }) {
                     <Link href="/properties">
                         <a  className={styles.anchor}>
                             <div className={styles.linkGroup}>
-                                <FaMapPin />
+                                <FaMapPin className={styles.icon}/>
                                 <h3 className={styles.font}>Properties</h3>
+                            </div>
+                        </a>
+                    </Link>
+                    
+                    <div className={styles.placeholder}></div>
+                    <p className={styles.p}>MANAGEMENT</p>
+                    <Link href="/maintenance">
+                        <a  className={styles.anchor}>
+                            <div className={styles.linkGroup}>
+                                <FaPaintRoller className={styles.icon}/>
+                                <h3 className={styles.font}>Maintenance</h3>
                             </div>
                         </a>
                     </Link>
                     <Link href="/maintenance">
                         <a  className={styles.anchor}>
                             <div className={styles.linkGroup}>
-                                <FaPaintRoller />
+                                <FaPaintRoller className={styles.icon} />
                                 <h3 className={styles.font}>Maintenance</h3>
+                            </div>
+                        </a>
+                    </Link>
+                    <Link href="/maintenance">
+                        <a  className={styles.anchor}>
+                            <div className={styles.linkGroup}>
+                                <FaPaintRoller className={styles.icon}/>
+                                <h3 className={styles.font}>Maintenance</h3>
+                                <div className={styles.counter}><p className={styles.insideCounter}>3</p></div>
+                            </div>
+                        </a>
+                    </Link>
+                    <div className={styles.placeholder}></div>
+                    <p className={styles.p}>FINANCING</p>
+                    <Link href="/expenses">
+                        <a  className={styles.anchor}>
+                            <div className={styles.linkGroup}>
+                                <FaCreditCard className={styles.icon}/>
+                                <h3 className={styles.font}>Expenses</h3>
                             </div>
                         </a>
                     </Link>
                     <Link href="/expenses">
                         <a  className={styles.anchor}>
                             <div className={styles.linkGroup}>
-                                <FaCreditCard />
+                                <FaCreditCard className={styles.icon}/>
+                                <h3 className={styles.font}>Expenses</h3>
+                            </div>
+                        </a>
+                    </Link>
+                    <div className={styles.placeholder}></div>
+                    <p className={styles.p}>SETTINGS</p>
+                    <Link href="/expenses">
+                        <a  className={styles.anchor}>
+                            <div className={styles.linkGroup}>
+                                <FaCreditCard className={styles.icon}/>
+                                <h3 className={styles.font}>Expenses</h3>
+                            </div>
+                        </a>
+                    </Link>
+                    <Link href="/expenses">
+                        <a  className={styles.anchor}>
+                            <div className={styles.linkGroup}>
+                                <FaCreditCard className={styles.icon}/>
+                                <h3 className={styles.font}>Expenses</h3>
+                            </div>
+                        </a>
+                    </Link>
+                    <Link href="/expenses">
+                        <a  className={styles.anchor}>
+                            <div className={styles.linkGroup}>
+                                <FaCreditCard className={styles.icon}/>
                                 <h3 className={styles.font}>Expenses</h3>
                             </div>
                         </a>

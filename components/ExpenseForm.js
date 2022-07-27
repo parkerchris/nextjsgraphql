@@ -3,23 +3,31 @@ export default function ExpenseForm() {
         <div>
             <form>
                 <div>
-                    <label></label>
-                    <input></input>
+                    <label>Date</label>
+                    <input
+                        placeholder="Add a date"
+                    ></input>
                 </div>
                 <div>
-                    <label></label>
-                    <input></input>
+                    <label>Property</label>
+                    <input
+                        placeholder="Which property"
+                    ></input>
                 </div>
                 <div>
-                    <label></label>
-                    <input></input>
+                    <label>Category</label>
+                    <input
+                        placeholder="Enter a category"
+                    ></input>
                 </div>
                 <div>
-                    <label></label>
-                    <input></input>
+                    <label>Description</label>
+                    <input
+                        placeholder="Add a description"
+                    ></input>
                 </div>
                 <div>
-                    <label></label>
+                    <label>Amount</label>
                     <input></input>
                 </div>
             </form>
