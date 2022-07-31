@@ -62,7 +62,6 @@ export default function Properties({properties}) {
                   </div>
                   {showAddPropertyModal && <AddProperty/>}
                   <div className={styles.propertyContainerMiddle}>
-                    
                   </div>
                   <div className={styles.propertyContainerBottom}>
                     <Image

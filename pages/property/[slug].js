@@ -1,4 +1,4 @@
-import { GraphQLClient, gql } from 'graphql-request' 
+import { GraphQLClient, gql } from 'graphql-request'
 
 export const getServerSideProps = async (pageContext) => {
     
@@ -36,7 +36,9 @@ export const getServerSideProps = async (pageContext) => {
 
 const Property = ({ property }) => {
     return (
-        <div>{property.street_address}</div>
+        <div>
+          {property.street_address}
+        </div>
     )
 }
 

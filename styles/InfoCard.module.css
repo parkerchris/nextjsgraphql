@@ -1,0 +1,90 @@
+.totalContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.mainContainer {
+    display: flex;
+    width: 900px;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.headerContainer {
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+.h3 {
+    margin-right: 2rem;
+}
+
+.form {
+    width: 100%;
+    height: 100%;
+    border: 1px solid rgb(221, 221, 221);
+    border-radius: 12px;
+    padding: 1rem;
+}
+
+.propertyContainer {
+    display: flex;
+}
+
+.labelInput {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+    margin-left: 1rem;
+}
+
+.label {
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-bottom: 0.3rem;
+}
+
+.input {
+   padding: 0.5rem 1rem;
+   background-color: rgb(247, 247, 247);
+   border: 1px solid rgb(221, 221, 221);
+   border-radius: 6px;
+   max-width: 200px;
+   color: gray;
+}
+
+.buttonContainer {
+    margin-left: 1rem;
+}
+
+.cancel {
+    padding: 14px 28px;
+    font-weight: 600;
+    border: 2px solid rgb(34, 34, 34);
+    color: rgb(34, 34, 34);
+    border-radius: 12px;
+    margin-right: 1rem;
+    background-color: white;
+    cursor: pointer;
+}
+
+.saveChanges {
+    padding: 14px 28px;
+    font-weight: 600;
+    background-color: rgb(34, 34, 34);
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+}
+
+.editIcon {
+    font-size: 1.5rem;
+}
+
+.data {
+    color: gray;
+}
