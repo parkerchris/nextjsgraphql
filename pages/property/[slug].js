@@ -39,6 +39,7 @@ const Property = ({ property }) => {
     return (
         <div>
           {property.street_address}
+          <InfoCard/>
         </div>
     )
 }

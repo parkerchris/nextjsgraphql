@@ -1,0 +1,46 @@
+.mainContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 64px;
+}
+
+.containerone {
+    margin-left: 1.5rem;
+}
+
+.h3 {
+    font-weight: 900;
+}
+
+.p {
+    font-weight: 400;
+    font-size: 0.9rem;
+    color: gray;
+}
+
+.containertwo {
+    display: flex;
+    margin-right: 1.5rem;
+}
+
+.filterButton {
+    padding: 14px 28px;
+    font-weight: 600;
+    border: 2px solid rgb(34, 34, 34);
+    color: rgb(34, 34, 34);
+    border-radius: 12px;
+    margin-right: 1rem;
+    background-color: white;
+    cursor: pointer;
+}
+
+.addButton {
+    padding: 14px 28px;
+    font-weight: 600;
+    background-color: rgb(34, 34, 34);
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+}

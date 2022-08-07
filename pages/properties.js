@@ -8,6 +8,7 @@ import lemon from '../public/Revised_Lemon.png'
 import AddProperty from '../components/AddProperty'
 import { useState } from 'react'
 import Link from 'next/link'
+import ContentHeader from '../components/ContentHeader'
 
 
 
@@ -60,11 +61,12 @@ export default function Properties({properties}) {
               <div className={styles.container}>
                 <div className={styles.propertyContainer}>
                   <div className={styles.propertyContainerTop}>
-                    <button 
+                    {/* <button 
                       className={styles.buttonOne}
                       onClick={handleClick}
                       >Add a property</button>
-                    <button className={styles.buttonTwo}>Filter</button>
+                    <button className={styles.buttonTwo}>Filter</button> */}
+                    <ContentHeader/>
                   </div>
                   {showAddPropertyModal && <AddProperty/>}
                   <div className={styles.propertyContainerMiddle}>
