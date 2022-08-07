@@ -28,16 +28,16 @@ export const P = styled.p`
     font-size: 0.9rem;
 ` */
 
-export default function PropertyCard() {
+export default function PropertyCard({property}) {
     return (
         <div className={styles.container}>
             <div className={styles.imageContainer}></div>
             <div className={styles.totalBottomContainer}>
                 <div className={styles.bottomContainer}>
-                    <h3 className={styles.addressText}>1405 Ridge Dr</h3>
-                    <h4>$2,000</h4>
+                    <h3 className={styles.addressText}>{property.street_address}</h3>
+                    <h4>${property.rent}</h4>
                 </div>
-                <p className={styles.cityText}>Redding, CA.</p>
+                <p className={styles.cityText}>{property.city}, {property.state}.</p>
             </div>
         </div>
     )

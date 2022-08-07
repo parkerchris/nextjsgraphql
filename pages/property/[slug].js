@@ -1,4 +1,5 @@
 import { GraphQLClient, gql } from 'graphql-request'
+import InfoCard from "../../components/InfoCard"
 
 export const getServerSideProps = async (pageContext) => {
     

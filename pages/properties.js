@@ -7,6 +7,7 @@ import styles from '../styles/Properties.module.css'
 import lemon from '../public/Revised_Lemon.png'
 import AddProperty from '../components/AddProperty'
 import { useState } from 'react'
+import Link from 'next/link'
 
 
 
@@ -21,10 +22,13 @@ export async function getStaticProps() {
   const QUERY = gql`
   {
     properties {
-      street_address,
-      city,
-      state,
+      id
+      slug
+      street_address
+      city
+      state
       zip_code
+      rent
     }
   }
   `
@@ -42,6 +46,8 @@ return{
 
 
 export default function Properties({properties}) {
+
+    console.log(properties)
 
     const [ showAddPropertyModal, setShowAddPropertyModal ] = useState(false);
 
@@ -62,6 +68,17 @@ export default function Properties({properties}) {
                   </div>
                   {showAddPropertyModal && <AddProperty/>}
                   <div className={styles.propertyContainerMiddle}>
+                    {properties.map(property => {
+                      return (
+                        <div key={property.id}>
+                          <Link href={`/property/${property.slug}`}>
+                            <a><PropertyCard 
+                              property={property}
+                            /></a>
+                          </Link>
+                        </div>
+                      )
+                    })}
                   </div>
                   <div className={styles.propertyContainerBottom}>
                     <Image

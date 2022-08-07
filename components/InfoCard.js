@@ -9,12 +9,32 @@ export default function InfoCard() {
 
     const [ editMode, setEditMode] = useState(false)
     const [ details, setDetails ] = useState({
-
+        streetNumber: "1405 Ridge Dr.",
+        city: "Redding",
+        state: "CA",
+        zip: 96001,
+        rent: 1750,
+        occupied: "no"
     })
 
     function handleClick() {
         setEditMode(!editMode)
     }
+
+    function handleChange(event) {
+        setDetails(prevDetails => {
+            return {
+                ...prevDetails,
+                [event.target.name]: event.target.value
+            }
+        })
+    }
+
+    function handleSubmit(event) {
+
+    }
+
+    console.log(details)
 
     return (
         <div className={styles.totalContainer}>
@@ -26,57 +46,75 @@ export default function InfoCard() {
             <div className={styles.mainContainer}>
                 <form className={styles.form}>
                     <div className={styles.propertyContainer}>
-                        <div className={styles.labelInput}>
+                        {/* <div className={styles.labelInput}>
                             <label className={styles.label}>Number</label>
                             { editMode ? <input
                                 className={styles.input}
                                 placeholder="1405"
                             ></input> : <h3 className={styles.data}>1405</h3>}
-                        </div>
+                        </div> */}
                         <div className={styles.labelInput}>
                             <label className={styles.label}>Street</label>
                             { editMode ? <input
+                                name="streetNumber"
                                 className={styles.input} 
-                                placeholder="Ridge Dr."
-                            ></input> : <h3 className={styles.data}>Ridge Dr.</h3>}
+                                placeholder={details.streetNumber}
+                                onChange={handleChange}
+                                value={details.streetNumber}
+                            ></input> : <h3 className={styles.data}>{details.streetNumber}</h3>}
                         </div>
                     </div>
                     <div className={styles.propertyContainer}>
                         <div className={styles.labelInput}>
                             <label className={styles.label}>City</label>
                             { editMode ? <input
+                                name="city"
                                 className={styles.input}
-                                placeholder="Redding"
-                            ></input> : <h3 className={styles.data}>Redding</h3>}
+                                placeholder={details.city}
+                                onChange={handleChange}
+                                value={details.city}
+                            ></input> : <h3 className={styles.data}>{details.city}</h3>}
                         </div>
                         <div className={styles.labelInput}>
                             <label className={styles.label}>State</label>
                             { editMode ? <input
+                                name="state"
                                 className={styles.input}
-                                placeholder="CA"
-                            ></input> : <h3 className={styles.data}>CA</h3>}
+                                placeholder={details.state}
+                                onChange={handleChange}
+                                value={details.state}
+                            ></input> : <h3 className={styles.data}>{details.state}</h3>}
                         </div>
                         <div className={styles.labelInput}>
                             <label className={styles.label}>Zip</label>
                             { editMode ? <input
+                                name="zip"
                                 className={styles.input} 
-                                placeholder="96001"
-                            ></input> : <h3 className={styles.data}>96001</h3>}
+                                placeholder={details.zip}
+                                onChange={handleChange}
+                                value={details.zip}
+                            ></input> : <h3 className={styles.data}>{details.zip}</h3>}
                         </div>
                     </div>
                     <div className={styles.labelInput}>
                         <label className={styles.label}>Rent</label>
                         { editMode ? <input
+                            name="rent"
                             className={styles.input} 
-                            placeholder="$2000"
-                        ></input> : <h3 className={styles.data}>$2000</h3>}
+                            placeholder={details.rent}
+                            onChange={handleChange}
+                            value={details.rent}
+                        ></input> : <h3 className={styles.data}>${details.rent}</h3>}
                     </div>
                     <div className={styles.labelInput}>
                         <label className={styles.label}>Occupied</label>
                         { editMode ? <input
+                            name="occupied"
                             className={styles.input} 
-                            placeholder="Yes"
-                        ></input> : <h3 className={styles.data}>Yes</h3>}
+                            placeholder={details.occupied}
+                            onChange={handleChange}
+                            value={details.occupied}
+                        ></input> : <h3 className={styles.data}>{details.occupied}</h3>}
                     </div>
                     <div className={styles.labelInput}>
                         <label className={styles.label}>this is something</label>
