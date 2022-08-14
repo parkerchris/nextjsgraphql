@@ -1,4 +1,12 @@
 
+/****** MAIN */
+.main {
+    box-sizing: border-box;
+    overflow-x: uns
+}
+
+
+
 /************************************************************************ HEADER */
 
 
@@ -7,7 +15,8 @@
     align-items: center;
     justify-content: center;
     height: 65px;
-    width: 100vw;
+    /* width: 100vw; */
+    width: 100%;
     background-color: rgb(247, 247, 247);
   }
   
@@ -108,7 +117,7 @@
 }
 
 .mainImage {
-    height: 84%;
+    /* height: 84%; */
     width: 90%;
     border: 3px solid black;
     border-radius: 14px;
@@ -159,4 +168,144 @@
     font-size: 0.8rem;
     font-weight: 400;
     margin-left: 12px;
+}
+
+
+/************************************ FEATURE CALLOUTS */
+
+.featureHeader {
+    height: 100px;
+    /* width: 100vw; */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.featureText {
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+.videoContainer {
+    height: 600px;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.videoPlayer {
+    height: 450px;
+    width: 800px;
+    background-color: rgb(247, 247, 247);
+    border: 3px solid black;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.playButton {
+    font-size: 4rem;
+}
+
+.featureContainer {
+    background-color: rgb(247, 247, 247);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.featureInnerContainer {
+    width: 80%;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.calloutContainer {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 4rem;
+}
+
+.calloutLeft {
+
+}
+
+.calloutRight {
+    width: 300px;
+    height: 200px;
+    background-color: black;
+    border-radius: 12px;
+}
+
+.calloutHeader {
+    font-size: 1.5rem;
+    font-weight: 900;  
+}
+
+.calloutText {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+/* Footer************************************************************ */
+
+.footer {
+    height: 65px;
+    border-top: 1px solid rgb(221, 221, 221);
+    background-color: rgb(247, 247, 247);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.innerFooterContainer {
+    display: flex;
+    height: 100%;
+    width: 90%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.innerFooterOne {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.innerFooterTwo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.pLeft{
+    margin-right: 1rem;
+    font-weight: 400;
+}
+
+.pRight{
+    margin-left: 1rem;
+    font-weight: 600;
+}
+
+/* Footer Modal************************************************************ */
+
+.footerModalContainer {
+    height: 300px;
+    width: 100%;
+    position: absolute;
+    z-index: 10;
+    bottom: 65px;
+    border: 3px solid black;
+    background-color: aqua;
+    border-radius: 12px;
 }

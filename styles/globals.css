@@ -31,6 +31,8 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   background-color: rgb(255,255,255);
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 a {

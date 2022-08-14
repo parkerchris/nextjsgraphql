@@ -2,7 +2,10 @@ import Head from 'next/head'
 import Image from 'next/image'
 import houseImage from '../public/main_home.jpg'
 import styles from '../styles/Home.module.css'
-import { GraphQLClient, gql } from 'graphql-request' 
+import { GraphQLClient, gql } from 'graphql-request'
+import { FaPlay } from "react-icons/fa"
+import { BiGlobe } from "react-icons/bi";
+import { IoIosArrowUp } from "react-icons/io";
 
 /* const graphcms = new GraphQLClient('https://api-us-west-2.graphcms.com/v2/cl51ze6181wt601ukbse59thb/master')
 
@@ -108,12 +111,10 @@ export default function Home({properties}) {
                 <div className={styles.factContainer}>
                   <p className={styles.pHeader}>Ownership</p>
                   <p className={styles.pMetric}>25%</p>
-                  <p className={styles.pHeader}>Partners</p>
-                  <p className={styles.pMetric}>6</p>
+                  <p className={styles.pMetric}>6 <span className={styles.span}>Partners</span></p>
                 </div>
                 <div className={styles.factContainer}>
                   <p className={styles.pHeader}>Maintenance</p>
-                  <p className={styles.pHeader}>Requests</p>
                   <p className={styles.pMetric}>3 <span className={styles.span}>open</span></p>
                   <p className={styles.pMetric}>0 <span className={styles.span}>critical</span></p>
                 </div>
@@ -127,13 +128,83 @@ export default function Home({properties}) {
                   <p className={styles.pHeader}>Cash Flow</p>
                   <p className={styles.pMetric}>$2,100</p>
                 </div>
-                <div className={styles.factContainer}>cont 5</div>
+                <div className={styles.factContainer}>
+                  <p className={styles.pHeader}>Equity</p>
+                  <p className={styles.pMetric}>$615.2K</p>
+                  <p className={styles.span}>Up 1% M/M</p>
+                </div>
               </div>
 
             </div>
           </div>
         </div>
+        {/* MAIN BODY END AND FEATURE CALLOUTS BEGIN */}
+        <div className={styles.featureHeader}>
+          <p className={styles.featureText}>Mosaic in 90 seconds</p>
+        </div>
+        <div className={styles.videoContainer}>
+          <div className={styles.videoPlayer}>
+            <FaPlay className={styles.playButton}/>
+          </div>
+        </div>
+        {/* VIDEO PLAYER END */}
+        <div className={styles.featureContainer}>
+          <div className={styles.featureInnerContainer}>
+            
+            <div className={styles.calloutContainer}>
+              <div className={styles.calloutLeft}>
+                <h4 className={styles.calloutHeader}>This is a header</h4>
+                <p className={styles.calloutText}>This is a paragraph look at me doing paragraph things.</p>
+              </div>
+              <div className={styles.calloutRight}></div>
+            </div>
 
+            <div className={styles.calloutContainer}>
+              <div className={styles.calloutLeft}>
+                <h4 className={styles.calloutHeader}>This is a header</h4>
+                <p className={styles.calloutText}>This is a paragraph look at me doing paragraph things.</p>
+              </div>
+              <div className={styles.calloutRight}></div>
+            </div>
+
+            <div className={styles.calloutContainer}>
+              <div className={styles.calloutLeft}>
+                <h4 className={styles.calloutHeader}>This is a header</h4>
+                <p className={styles.calloutText}>This is a paragraph look at me doing paragraph things.</p>
+              </div>
+              <div className={styles.calloutRight}></div>
+            </div>
+
+            <div className={styles.calloutContainer}>
+              <div className={styles.calloutLeft}>
+                <h4 className={styles.calloutHeader}>This is a header</h4>
+                <p className={styles.calloutText}>This is a paragraph look at me doing paragraph things.</p>
+              </div>
+              <div className={styles.calloutRight}></div>
+            </div>
+
+          </div>
+        </div>
+        {/* FEATURE SECTION END FOOT BEGIN */}
+        <div className={styles.footer}>
+                <div className={styles.innerFooterContainer}>
+                    <div className={styles.innerFooterOne}>
+                        <p className={styles.pLeft}>© Mosaic, Inc.</p>
+                        <p className={styles.pLeft}>Privacy</p>
+                        <p className={styles.pLeft}>Terms</p>
+                        <p className={styles.pLeft}>Sitemap</p>
+                        <p className={styles.pLeft}>Contact</p>
+                    </div>
+                    <div className={styles.innerFooterTwo}>
+                        <BiGlobe />
+                        <p className={styles.pRight}>English</p>
+                        <p className={styles.pRight}>Support & Resources</p>
+                        <IoIosArrowUp />
+                    </div>
+                </div>
+            </div>
+        {/* FOOTER MODAL */}
+        {/* <div className={styles.footerModalContainer}></div> */}
       </main>
     </div>
   )
