@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import Link from 'next/link'
 import houseImage from '../public/main_home.jpg'
 import styles from '../styles/Home.module.css'
 import { GraphQLClient, gql } from 'graphql-request'
@@ -86,8 +87,17 @@ export default function Home({properties}) {
               <p className={styles.p}>Tools</p>
             </div>
             <div className={styles.contentContainer}>
-              <p className={styles.p}>Log in</p>
-              <button className={styles.button}>Sign up</button>
+              <Link href="/signin">
+                <a>
+                  <p className={styles.p}>Log in</p>
+                </a>
+              </Link>
+              <Link href="/signup">
+                <a>
+                  <button className={styles.button}>Sign up</button>
+                </a>
+              </Link>
+              
             </div>
           </div>
         </div>
@@ -98,6 +108,8 @@ export default function Home({properties}) {
               <h1 className={styles.h1}>A Platform to Manage and Track<br/>Real Estate Portfolios at Scale</h1>
               <h2 className={styles.h2}>Real estate professiols use this platform to do the things<br/>that make them make more money and more money<br/>is more money</h2>
               <button className={styles.getStarted}>Get Started</button>
+{/*               <p className={styles.small}>Completely free, forever</p>
+              <p className={styles.small}>No CC required</p> */}
             </div>
             <div className={styles.containerRight}>
               <div className={styles.mainImage}>

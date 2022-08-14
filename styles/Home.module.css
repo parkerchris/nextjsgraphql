@@ -56,6 +56,10 @@
     margin-left: 25px;
 }
 
+/* .small {
+    font-size: 0.7rem;
+    font-style: italic;
+} */
 
 /************************************************************************ HEADER */
 
@@ -208,6 +212,11 @@
 
 .playButton {
     font-size: 4rem;
+    cursor: pointer;
+}
+
+.playButton:hover {
+    transform: scale(1.1);
 }
 
 .featureContainer {

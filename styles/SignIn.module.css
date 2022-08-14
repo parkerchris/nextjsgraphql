@@ -1,0 +1,67 @@
+.mainContainer {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+}
+
+.mainContainerLeft {
+    background-color: rgb(34,34,34);
+    height: 100%;
+    width: 50%;
+}
+
+.mainContainerRight {
+    background-color: rgb(247, 247, 247);
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 350px;
+}
+
+.h1 {
+    font-size: 1.5rem;
+    font-weight: 900;
+    margin-bottom: 0.5rem;
+}
+
+.p {
+    color: darkgray;
+    font-size: 1rem;
+    margin-bottom: 2rem;
+}
+
+.input {
+    padding: 0.5rem 1rem;
+    background-color: rgb(247, 247, 247);
+    border: 1px solid rgb(221, 221, 221);
+    border-radius: 6px;
+    width: 100%;
+    color: gray;
+    margin-bottom: 1rem;
+ }
+
+ .button {
+    padding: 14px 28px;
+    font-weight: 600;
+    width: 100%;
+    background-color: rgb(34, 34, 34);
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    margin-bottom: 1rem;
+}
+
+.span {
+    font-weight: 700;
+    color: black;
+    text-decoration: underline;
+}
