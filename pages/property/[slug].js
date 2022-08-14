@@ -1,5 +1,6 @@
 import { GraphQLClient, gql } from 'graphql-request'
 import InfoCard from "../../components/InfoCard"
+import Layout from "../../components/Layout"
 
 export const getServerSideProps = async (pageContext) => {
     
@@ -15,8 +16,42 @@ export const getServerSideProps = async (pageContext) => {
     const QUERY = gql`
     query($pageSlug: String!) {
         property(where: {slug: $pageSlug}) {
-          street_address,
+          id
+          slug
+          street_address
           city
+          state
+          zip_code
+          rent
+          bedrooms
+          bathrooms
+          sqft
+          yearBuilt
+          purchaseDate
+          assessorParcelNumber
+          mailboxNumber
+          mailboxLocation
+          garbagePickupDay
+          fireInsuranceCarrier
+          fireInsurancePolicyInformation
+          fireInsurancePolicyExpirationDate
+          maintenanceRequests {
+            id
+            title
+            createdAt
+            maintenanceStatus
+            maintenanceSeverity
+          }
+          tenants {
+            id
+            firstName
+            lastName
+            phoneNumber
+            email
+            moveInDate
+            initialRent
+            currentRent
+          }
         }
       }
     `
@@ -36,11 +71,33 @@ export const getServerSideProps = async (pageContext) => {
 }
 
 const Property = ({ property }) => {
+
+    console.log(property)
+
     return (
-        <div>
-          {property.street_address}
-          <InfoCard/>
-        </div>
+          <Layout>
+            <div className="slugMainContainer">
+              <div className="slugContainerLeft">
+                <h3>{property.street_address}</h3>
+                <p>{property.city}, {property.state}</p>
+                <div></div>
+                <p>Bedrooms: {property.bedrooms}</p>
+                <p>Bathrooms: {property.bathroooms}</p>
+                <p>Sqft: {property.sqft}</p>
+              </div>
+              <div className="slugContainerRight">
+                <div className="selectorContainer">
+                  <p className="p">Property Details</p>
+                  <p className="p">County Information</p>
+                  <p className="p">Capital Expenditures</p>
+                  <p className="p">Tenant</p>
+                  <p className="p">Neighbors</p>
+                  <p className="p">Comparables</p>
+                  <p className="p">Comments</p>
+                </div>
+              </div>
+            </div>
+          </Layout>
     )
 }
 

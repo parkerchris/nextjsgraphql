@@ -66,21 +66,25 @@ export default function Properties({properties}) {
                       onClick={handleClick}
                       >Add a property</button>
                     <button className={styles.buttonTwo}>Filter</button> */}
-                    <ContentHeader/>
+                    <ContentHeader
+                      handleClick={handleClick}
+                    />
                   </div>
                   {showAddPropertyModal && <AddProperty/>}
                   <div className={styles.propertyContainerMiddle}>
-                    {properties.map(property => {
-                      return (
-                        <div key={property.id}>
-                          <Link href={`/property/${property.slug}`}>
-                            <a><PropertyCard 
-                              property={property}
-                            /></a>
-                          </Link>
+                    <div className={styles.propertyContainerMiddleInner}>
+                      {properties.map(property => {
+                        return (
+                          <div key={property.id}>
+                            <Link href={`/property/${property.slug}`}>
+                              <a><PropertyCard 
+                                property={property}
+                              /></a>
+                            </Link>
                         </div>
                       )
                     })}
+                    </div>
                   </div>
                   <div className={styles.propertyContainerBottom}>
                     <Image

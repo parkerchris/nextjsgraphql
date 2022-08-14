@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import houseImage from '../public/main_home.jpg'
 import styles from '../styles/Home.module.css'
 import { GraphQLClient, gql } from 'graphql-request' 
 
@@ -67,11 +68,72 @@ export default function Home({properties}) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main /* className={styles.main} */>
-        <h1>Properties:</h1>
+      <main>
+{/*         <h1>Properties:</h1>
         {properties.map((property) => (
           <h1>{property.street_address} {property.city}, {property.zip_code}</h1>
-        ))}
+        ))} */}
+
+        <div className={styles.headerContainer}>
+          <div className={styles.headerInnerContainer}>
+            <div className={styles.contentContainer}>MOSAIC</div>
+            <div className={styles.centerContentContainer}>
+              <p className={styles.p}>Learn More</p>
+              <p className={styles.p}>Why Mosaic</p>
+              <p className={styles.p}>Tools</p>
+            </div>
+            <div className={styles.contentContainer}>
+              <p className={styles.p}>Log in</p>
+              <button className={styles.button}>Sign up</button>
+            </div>
+          </div>
+        </div>
+{/*         MAIN BODY */}
+        <div className={styles.mainBodyContainer}>
+          <div className={styles.mainBodyInnerContainer}>
+            <div className={styles.containerLeft}>
+              <h1 className={styles.h1}>A Platform to Manage and Track<br/>Real Estate Portfolios at Scale</h1>
+              <h2 className={styles.h2}>Real estate professiols use this platform to do the things<br/>that make them make more money and more money<br/>is more money</h2>
+              <button className={styles.getStarted}>Get Started</button>
+            </div>
+            <div className={styles.containerRight}>
+              <div className={styles.mainImage}>
+              <Image
+                      alt={`A frame house in the mountains`}
+                      src={houseImage}
+                      layout={`responsive`}
+                    />
+              </div>
+              <div className={styles.displayContainersRight}>
+                <div className={styles.factContainer}>
+                  <p className={styles.pHeader}>Ownership</p>
+                  <p className={styles.pMetric}>25%</p>
+                  <p className={styles.pHeader}>Partners</p>
+                  <p className={styles.pMetric}>6</p>
+                </div>
+                <div className={styles.factContainer}>
+                  <p className={styles.pHeader}>Maintenance</p>
+                  <p className={styles.pHeader}>Requests</p>
+                  <p className={styles.pMetric}>3 <span className={styles.span}>open</span></p>
+                  <p className={styles.pMetric}>0 <span className={styles.span}>critical</span></p>
+                </div>
+                <div className={styles.factContainer}>
+                  <p className={styles.pHeader}>Expenses</p>
+                  <p className={styles.pMetric}>$830</p>
+                  <p className={styles.span}>Down 12% M/M</p>
+                </div>
+                <div className={styles.factContainer}>
+                  <p className={styles.pHeader}>August</p>
+                  <p className={styles.pHeader}>Cash Flow</p>
+                  <p className={styles.pMetric}>$2,100</p>
+                </div>
+                <div className={styles.factContainer}>cont 5</div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
       </main>
     </div>
   )

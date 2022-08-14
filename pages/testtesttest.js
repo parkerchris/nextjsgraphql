@@ -5,10 +5,8 @@ import ContentHeader from '../components/ContentHeader'
 
 export default function Testtesttest() {
     return (
-       <div className={styles.mainContainer}>
-            <ContentHeader />
-            <div className={styles.middlediv}>MIDDLE</div>
-            <div className={styles.bottomdiv}>BOTTOM</div>
+       <div>
+        <InfoCard/>
        </div>
     )
 }

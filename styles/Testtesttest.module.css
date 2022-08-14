@@ -3,6 +3,7 @@
     height: 100vh;
     border: 1px solid black;
     overflow-y: scroll;
+    display: flex;
 }
 
 .topdiv {

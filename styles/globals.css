@@ -45,6 +45,46 @@ a {
   /* font-family: 'Poppins', sans-serif; */
 }
 
+
+/******************** HOME PAGE (NOT LOGGED IN) *************************************/
+
+
+
+/****************************** SLUG PROPERTIES PAGE ************************/
+
+.slugMainContainer {
+  height: 100%;
+  width: 100%;
+  display: flex;
+
+}
+
+.slugContainerLeft {
+  flex-basis: 60%;
+}
+
+.slugContainerRight {
+  flex-basis: 40%;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.selectorContainer {
+  height: 500px;
+  width: 400px;
+  background-color: white;
+  border-radius: 12px;
+}
+
+.p {
+  font-weight: 700;
+  margin-left: 2rem;
+  margin-bottom: 1rem;
+}
+
+
 /************************************************************************************* Header  */
 
 /* .header-container {

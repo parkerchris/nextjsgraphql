@@ -1,0 +1,38 @@
+.container {
+    height: 100px;
+    width: 100%;
+    display: flex;
+
+}
+
+.button {
+    padding: 14px 28px;
+    font-weight: 600;
+    background-color: rgb(34, 34, 34);
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+}
+
+.labelInput {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+    margin-left: 1rem;
+    width: 150px;
+}
+
+.label {
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-bottom: 0.3rem;
+}
+
+.input {
+   padding: 0.5rem 1rem;
+   background-color: rgb(247, 247, 247);
+   border: 1px solid rgb(221, 221, 221);
+   border-radius: 6px;
+   max-width: 200px;
+   color: gray;
+}
