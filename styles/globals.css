@@ -55,35 +55,102 @@ a {
 /****************************** SLUG PROPERTIES PAGE ************************/
 
 .slugMainContainer {
-  height: 100%;
-  width: 100%;
+  height: 100vh;
+  width: 100vw;
   display: flex;
-
+  background-color: rgb(247, 247, 247);
+  border: solid;
 }
 
 .slugContainerLeft {
-  flex-basis: 60%;
+  height: 100%;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid;
+}
+
+.innerContainerLeft {
+  height: 80%;
+  width: 100%;
+  border: solid;
+  margin-left: 3rem;
+}
+
+.property {
+  margin-bottom: 2rem;
+}
+
+.mainDetails {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.mainDetailSingleContainer {
+  margin-right: 2rem;
+}
+
+.detailHeader {
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.detailMetric {
+  font-size: 1.3rem;
+  font-weight: 900;
+}
+
+.graphAndCardContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  border: solid;
+}
+
+.graphContainer {
+  background-image: url("../public/gradient_oc_large.jpg");
+  border-radius: 14px;
+  width: 900px;
+  height: 500px;
+}
+
+.cardContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 800px;
+  height: 150px;
+  position: relative;
+  bottom: 3rem;
+}
+
+.card {
+  background-color: rgb(34,34,34);
+  height: 100%;
+  width: 18%;
+  border-radius: 12px;
+  z-index: 10;
 }
 
 .slugContainerRight {
-  flex-basis: 40%;
-  background-color: black;
+  height: 100%;
+  width: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.selectorContainer {
-  height: 500px;
-  width: 400px;
-  background-color: white;
-  border-radius: 12px;
+.innerContainerRight {
+  height: 80%;
+  width: 80%;
 }
 
 .p {
   font-weight: 700;
-  margin-left: 2rem;
-  margin-bottom: 1rem;
+  color: white;
 }
 
 

@@ -1,0 +1,34 @@
+.mainContentContainer {
+    background-color: rgb(247, 247, 247);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.analyticsContainer {
+    width: 60%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+
+.singleAnalyticsContainer {
+    padding-left: 1rem;
+    border-right: 1px solid black;
+    height: 100%;
+    width: 100%;
+}
+
+.h3 {
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.p {
+    font-size: 1.3rem;
+    font-weight: 900;
+}

@@ -105,7 +105,7 @@ export default function Home({properties}) {
         <div className={styles.mainBodyContainer}>
           <div className={styles.mainBodyInnerContainer}>
             <div className={styles.containerLeft}>
-              <h1 className={styles.h1}>A Platform to Manage and Track<br/>Real Estate Portfolios at Scale</h1>
+              <h1 className={styles.h1}>A Platform to Manage and Grow<br/>Real Estate Portfolios at Scale</h1>
               <h2 className={styles.h2}>Real estate professiols use this platform to do the things<br/>that make them make more money and more money<br/>is more money</h2>
               <button className={styles.getStarted}>Get Started</button>
 {/*               <p className={styles.small}>Completely free, forever</p>
