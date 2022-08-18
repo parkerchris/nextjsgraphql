@@ -5,10 +5,11 @@ import Image from 'next/image'
 import { AiFillEdit } from "react-icons/ai";
 import { MdDelete } from "react-icons/md";
 import { CgArrowsV } from "react-icons/cg";
+import LayoutTwo from '../components/LayoutTwo';
 
 export default function Expenses() {
     return (
-        <Layout>
+        <LayoutTwo>
            <div className={styles.mainContainer}>
             <div className={styles.tableContainer}>
                     <table className={styles.table}>
@@ -73,6 +74,6 @@ export default function Expenses() {
                     </table>
                 </div>
            </div>
-        </Layout>
+        </LayoutTwo>
     )
 }

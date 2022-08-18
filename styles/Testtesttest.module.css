@@ -1,25 +1,30 @@
-.mainContainer {
-    width: 1000px;
-    height: 100vh;
-    border: 1px solid black;
-    overflow-y: scroll;
-    display: flex;
-}
 
-.topdiv {
-    border: 1px solid black;
+
+.content {
+    height: 100%;
     width: 100%;
-    height: 60px;
+    background-color: var(--background-gray);
 }
 
-.middlediv {
-    border: 1px solid black;
+.container {
+    margin-left: 4rem;
 }
 
-.bottomdiv {
-    position: relative;
-    bottom: 0;
-    border: 1px solid black;
-    width: 100%;
+.image {
     height: 200px;
+    width: 400px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.h3, .p {
+    /* color: var(--font-gray); */
+}
+
+.pp {
+    color: var(--font-gray);
 }

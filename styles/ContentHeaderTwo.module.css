@@ -19,7 +19,7 @@
 }
 
 .h3 {
-
+    color: var(--font-gray);
 }
 
 .p {
@@ -36,11 +36,11 @@
     padding: 14px 28px;
     font-weight: 600;
     border: 2px solid rgb(34, 34, 34);
-    color: rgb(34, 34, 34);
     border-radius: 12px;
     margin-right: 1rem;
     background-color: var(--background-gray);
     cursor: pointer;
+    color: var(--font-gray);
 }
 
 .addButton {
@@ -48,6 +48,6 @@
     font-weight: 600;
     background-color: rgb(34, 34, 34);
     border-radius: 8px;
-    color: var(--background-gray);
+    color: white;
     cursor: pointer;
 }

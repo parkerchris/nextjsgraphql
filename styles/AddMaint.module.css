@@ -1,0 +1,47 @@
+.mainContainer {
+    display: flex;
+    height: 150px;
+    width: 150px;
+    background-color: white;
+    border-radius: 12px;
+    padding: 0.5rem;
+    justify-content: space-between;
+}
+
+.leftContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 100%;
+    width: 50%;
+
+}
+
+.rightContainer {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    height: 100%;
+    width: 25%;
+    border: solid;
+}
+
+.icon {
+    color: var(--font-gray);
+    font-size: 3rem;
+}
+
+.add {
+    border-radius: 50%;
+    height: 35px;
+    height: 35px;
+    background-color: var(--font-gray);
+
+}
+
+.p {
+    font-weight: 900;
+    font-size: 0.75rem;
+    color: var(--font-gray);
+}

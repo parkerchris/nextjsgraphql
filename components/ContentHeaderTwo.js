@@ -1,6 +1,6 @@
-import styles from '../styles/ContentHeader.module.css'
+import styles from '../styles/ContentHeaderTwo.module.css'
 
-export default function ContentHeader(props) {
+export default function ContentHeaderTwo(props) {
 
     console.log(props)
 

@@ -1,0 +1,20 @@
+.mainContentContainer {
+    background-color: var(--background-gray);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-y: scroll;
+}
+
+.innerContainer {
+    height: 100%;
+    width: 40%;
+
+}
+
+.header {
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}

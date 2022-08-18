@@ -1,10 +1,12 @@
 import Layout from '../components/Layout'
 import styles from '../styles/Dashboard.module.css'
+import AddMaint from '../components/AddMaint'
 
 export default function Dashboard() {
     return (
         <Layout>
             <div className={styles.mainContentContainer}>
+                
                 <div className={styles.analyticsContainer}>
                     <div className={styles.singleAnalyticsContainer}>
                         <h3 className={styles.h3}>Owned Assets</h3>
@@ -32,6 +34,7 @@ export default function Dashboard() {
                     </div>
 
                 </div>
+                <AddMaint/>
             </div>
         </Layout>
     )
