@@ -1,5 +1,5 @@
 .mainContainer {
-    height: 200px;
+    height: 250px;
     width: 500px;
     background-color: white;
     border-radius: 12px;
@@ -8,17 +8,23 @@
     cursor: pointer;
     display: flex;
     flex-direction: column;
+    z-index: 10;
+}
+
+.mainContainer:hover {
+    transform: scale(1.01);
 }
 
 .imageContainer {
     width: 100%;
-    height: 50%;
+    height: 70%;
 }
 
 .detailsContainer {
     width: 100%;
-    height: 50%;
+    height: 30%;
     border-top: 1px solid var(--border-gray);
+    z-index: 10;
 }
 
 .firstDetailRow {
@@ -66,4 +72,18 @@
     font-size: 0.9rem;
     margin-bottom: 0.5rem;
     margin-left: 0.5rem;
+}
+
+.todayContainer {
+    height: 100px;
+    width: 500px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    margin-bottom: 2rem;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: -30px;
 }
