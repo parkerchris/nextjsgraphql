@@ -9,6 +9,7 @@ import AddProperty from '../components/AddProperty'
 import { useState } from 'react'
 import Link from 'next/link'
 import ContentHeader from '../components/ContentHeader'
+import LayoutTwo from '../components/LayoutTwo'
 
 
 
@@ -57,8 +58,9 @@ export default function Properties({properties}) {
     }
 
     return (
-          <Layout>
+          <LayoutTwo>
               <div className={styles.container}>
+                <div className={styles.mapContainer}><span className={styles.dummy}>THIS IS A MAP</span></div>
                 <div className={styles.propertyContainer}>
                   <div className={styles.propertyContainerTop}>
                     {/* <button 
@@ -95,9 +97,9 @@ export default function Properties({properties}) {
                   </div>
                   
                 </div>
-                <div className={styles.mapContainer}><span className={styles.dummy}>THIS IS A MAP</span></div>
+                
               </div>
-          </Layout>
+          </LayoutTwo>
 
     )
   }

@@ -30,14 +30,20 @@ export const P = styled.p`
 
 export default function PropertyCard({property}) {
     return (
-        <div className={styles.container}>
+        <div className={styles.mainContainer}>
             <div className={styles.imageContainer}></div>
-            <div className={styles.totalBottomContainer}>
-                <div className={styles.bottomContainer}>
-                    <h3 className={styles.addressText}>{property.street_address}</h3>
-                    <h4>${property.rent}</h4>
+            <div className={styles.detailsContainer}>
+                <div className={styles.firstDetailRow}>
+                    <h3 className={styles.address}>1405 Ridge Dr</h3>
+                    <p>$2,200/M</p>
                 </div>
-                <p className={styles.cityText}>{property.city}, {property.state}.</p>
+                <div className={styles.secondDetailRow}>
+                    <p>Redding, CA.</p>
+                    <div className={styles.statusContainer}>
+                        <div className={styles.statusIcon}></div>
+                        <p className={styles.status}>Occupied</p>
+                    </div>
+                </div>
             </div>
         </div>
     )

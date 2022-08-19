@@ -20,22 +20,45 @@ export default function LayoutTwo({children}) {
         <div className={styles.gridContainer}>
             <div className={styles.header}>
                 <div className={styles.headerContainer}>
-                    <div className={styles.logoContainer}>
-                        <HiMenuAlt3 className={styles.menuIcon}/>
-                        <h1 className={styles.logo}>MOSAIC</h1>
-                    </div>
-                    <div>
-                        <div className={styles.searchbar}>
-                            <IoSearch className={styles.searchIcon}/>
-                            <p className={styles.searchText}>Search by property, partner, expense...</p>
+                        <div className={styles.logoContainer}>
+                            <h1 className={styles.logo}>MOSAIC</h1>
+                            <div className={styles.middleContainer}>
+                                <div className={styles.searchbar}>
+                                        <IoSearch className={styles.searchIcon}/>
+                                        <p className={styles.searchText}>Search by property, partner, expense...</p>
+                                </div>
+                                <div className={styles.navLinksContainer}>
+                                    <Link href="/dashboard">
+                                        <a>
+                                            <p className={styles.navLinks}>Home</p>
+                                        </a>
+                                    </Link>
+                                    <Link href="/properties">
+                                        <a>
+                                            <p className={styles.navLinks}>Properties</p>
+                                        </a>
+                                    </Link>
+                                    <p className={styles.navLinks}>Partners</p>
+                                    <Link href="/maintenance">
+                                        <a>
+                                            <p className={styles.navLinks}>Maintenance</p>
+                                        </a>
+                                    </Link>
+                                    <Link href="/expenses">
+                                        <a>
+                                            <p className={styles.navLinks}>Expenses</p>
+                                        </a>
+                                    </Link>
+                                </div>
+                            </div>
                         </div>
-                    </div>
+                        
                     <div>
                         <div className={styles.avatar}><p className={styles.avatarDefault}>CP</p></div>
                     </div>
                 </div>
             </div>
-            <div className={styles.nav}>
+            {/* <div className={styles.nav}>
                 <div className={styles.innerContainer}>
                     <p className={styles.p}>MAIN MENU</p>
                     <Link href="/">
@@ -107,7 +130,7 @@ export default function LayoutTwo({children}) {
                         </a>
                     </Link>
                 </div>
-            </div>
+            </div> */}
             <div className={styles.content}>{children}</div>
             <div className={styles.footer}>
                 <div className={styles.innerFooterContainer}>
