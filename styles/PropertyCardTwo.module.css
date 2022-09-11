@@ -1,0 +1,67 @@
+.container {
+    cursor: pointer;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    max-width: 400px;
+}
+
+
+.container:hover {
+    transform: scale(1.01);
+ 
+}
+
+.containerLeft {
+
+}
+
+.containerRight {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-left: 3rem;
+}
+
+.statusContainer {
+    display: flex;
+    align-items: center;
+}
+
+.statusIcon {
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    background-color: var(--status-green);
+    margin-right: 0.5rem;
+}
+
+
+.rent {
+    font-family: Inter;
+    font-weight: 400;
+    margin-bottom: 0.1rem;
+}
+
+.status {
+    font-family: Inter;
+    font-weight: 600;
+    font-size: 0.75rem;
+}
+
+.address {
+    font-family: Inter;
+    font-weight: 700;
+    font-size: 1.3rem;
+    margin-bottom: 0.1rem;
+    letter-spacing: 0.1px;
+    color: var(--black8)
+}
+
+.city {
+    font-family: Inter;
+    font-weight: 400;
+}

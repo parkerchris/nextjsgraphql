@@ -1,0 +1,25 @@
+.marker {
+    padding: 0.5rem;
+    background-color: rgb(34,34,34);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+}
+
+.status {
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    background-color: rgba(42,219,196,255);
+}
+
+.rentContainer {
+    margin-left: 0.5rem;
+}
+
+.rent {
+    color: white;
+    font-weight: 700;
+    font-size: 0.9rem;
+}

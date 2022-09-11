@@ -5,7 +5,7 @@
 }
 
 .propertyContainer{
-    flex-basis: 30%;
+    flex-basis: 25%;
     overflow-y: scroll;
     display: flex;
     flex-direction: column;
@@ -16,8 +16,7 @@
 }
 
 .mapContainer {
-    flex-basis: 70%;
-    background-color: black;
+    flex-basis: 75%;
     display: flex;
     align-items: center;
     justify-content: center;

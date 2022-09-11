@@ -1,41 +1,46 @@
 import Layout from '../components/Layout'
 import styles from '../styles/Dashboard.module.css'
-import AddMaint from '../components/AddMaint'
+import LayoutTwo from '../components/LayoutTwo'
 
 export default function Dashboard() {
     return (
-        <Layout>
+        <LayoutTwo>
             <div className={styles.mainContentContainer}>
-                
-                <div className={styles.analyticsContainer}>
-                    <div className={styles.singleAnalyticsContainer}>
-                        <h3 className={styles.h3}>Owned Assets</h3>
-                        <p className={styles.p}>$2,541,000</p>
+                <div className={styles.innerContainer}>
+                    <h1 className={styles.intro}>Hello, Chris</h1>
+                    <div className={styles.analyticsContainer}>
+                        <div className={styles.graph}></div>
+                        <div className={styles.portfolio}>
+                            <div><p className={styles.value}>$2,005,900</p></div>
+                            <div><p className={styles.title}>Portfolio</p></div>
+                        </div>
+                        <div className={styles.equity}>
+                            <div><p className={styles.value}>$1,320,450</p></div>
+                            <div><p className={styles.title}>Equity</p></div>
+                        </div>
+                        <div className={styles.debt}>
+                            <div><p className={styles.value}>$1,320,450</p></div>
+                            <div><p className={styles.title}>Debt</p></div>
+                        </div>
+                        <div className={styles.rent}>
+                            <div><p className={styles.value}>$1200</p></div>
+                            <div><p className={styles.title}>Rents</p></div>
+                        </div>
+                        <div className={styles.expenses}>
+                            <div><p className={styles.value}>$800</p></div>
+                            <div><p className={styles.title}>Expenses</p></div>
+                        </div>
+                        <div className={styles.cashflow}>
+                            <div><p className={styles.value}>$400</p></div>
+                            <div><p className={styles.title}>Cash Flow</p></div>
+                        </div>
                     </div>
-                    <div className={styles.singleAnalyticsContainer}>
-                        <h3 className={styles.h3}>Equity</h3>
-                        <p className={styles.p}>$1,218,000</p>
-                    </div>
-                    <div className={styles.singleAnalyticsContainer}>
-                        <h3 className={styles.h3}>Debt</h3>
-                        <p className={styles.p}>$519,900</p>
-                    </div>
-                    <div className={styles.singleAnalyticsContainer}>
-                        <h3 className={styles.h3}>Expenses</h3>
-                        <p className={styles.p}>$3,000</p>
-                    </div>
-                    <div className={styles.singleAnalyticsContainer}>
-                        <h3 className={styles.h3}>Cash Flow</h3>
-                        <p className={styles.p}>$1,200</p>
-                    </div>
-                    <div className={styles.singleAnalyticsContainer}>
-                        <h3 className={styles.h3}></h3>
-                        <p className={styles.p}></p>
-                    </div>
+                    <h1 className={styles.intro}>Today</h1>
+                    <h1 className={styles.intro}>Issues</h1>
 
                 </div>
-                <AddMaint/>
+               
             </div>
-        </Layout>
+        </LayoutTwo>
     )
 }

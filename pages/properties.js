@@ -10,6 +10,8 @@ import { useState } from 'react'
 import Link from 'next/link'
 import ContentHeader from '../components/ContentHeader'
 import LayoutTwo from '../components/LayoutTwo'
+import {useJsApiLoader , GoogleMap} from '@react-google-maps/api'
+import Map from '../components/Map'
 
 
 
@@ -49,7 +51,7 @@ return{
 
 export default function Properties({properties}) {
 
-    console.log(properties)
+    
 
     const [ showAddPropertyModal, setShowAddPropertyModal ] = useState(false);
 
@@ -60,7 +62,9 @@ export default function Properties({properties}) {
     return (
           <LayoutTwo>
               <div className={styles.container}>
-                <div className={styles.mapContainer}><span className={styles.dummy}>THIS IS A MAP</span></div>
+                <div className={styles.mapContainer}>
+                  <Map/>
+                  </div>
                 <div className={styles.propertyContainer}>
                   <div className={styles.propertyContainerTop}>
                     {/* <button 

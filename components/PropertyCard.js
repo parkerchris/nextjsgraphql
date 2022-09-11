@@ -1,4 +1,6 @@
 import styles from '../styles/PropertyCard.module.css'
+import Image from 'next/image'
+import coggins from '../public/coggins.jpg'
 
 
 /* 
@@ -31,7 +33,13 @@ export const P = styled.p`
 export default function PropertyCard({property}) {
     return (
         <div className={styles.mainContainer}>
-            <div className={styles.imageContainer}></div>
+            <div className={styles.imageContainer}>
+            <Image
+                      alt={`Image of a house`}
+                      src={coggins}
+                      layout={`responsive`}
+                    />
+            </div>
             <div className={styles.detailsContainer}>
                 <div className={styles.firstDetailRow}>
                     <h3 className={styles.address}>1405 Ridge Dr</h3>

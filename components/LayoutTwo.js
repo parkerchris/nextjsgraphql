@@ -14,6 +14,7 @@ import { IoSearch } from "react-icons/io5";
 import { BsPersonPlus } from "react-icons/bs";
 import { TbPaint } from "react-icons/tb"
 import { FiMapPin } from "react-icons/fi"
+import { IoNotificationsSharp } from "react-icons/io5";
 
 export default function LayoutTwo({children}) {
     return (
@@ -53,7 +54,9 @@ export default function LayoutTwo({children}) {
                             </div>
                         </div>
                         
-                    <div>
+                    <div className={styles.actionContainer}>
+                        <button className={styles.addButton}>+ Add</button>
+                        <IoNotificationsSharp className={styles.notifIcon}/>
                         <div className={styles.avatar}><p className={styles.avatarDefault}>CP</p></div>
                     </div>
                 </div>

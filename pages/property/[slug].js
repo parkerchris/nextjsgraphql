@@ -83,14 +83,14 @@ const Property = ({ property }) => {
               <div className="slugContainerLeft">
                 <div className="innerContainerLeft">
                   <div className="property">
-                    <h1>1105 Kentfield Rd.</h1>
+                    <h1 className="address">1105 Kentfield Rd.</h1>
                     <p>Chico, CA.</p>
                   </div>
 
                   <div className="flex">
                     <div className="flexInner">
-                      <h4>Pod</h4>
-                      <p>Parker Properties</p>
+                      <h4>Partner Group</h4>
+                      <p>None</p>
                     </div>
                     <div>
                       <h4>Ownership Percent</h4>
@@ -112,22 +112,18 @@ const Property = ({ property }) => {
                   </div> */}
 
                   <h3 className="header">Property Details</h3>
-                  <div className="mainDetails">
-                    <div className="mainDetailSingleContainer">
-                      <p className="detailHeader">Purchase Price</p>
-                      <p className="detailMetric">$250,000</p>
+                  <div className="flex">
+                    <div className="flexInner">
+                      <h4>Beds</h4>
+                      <p>3</p>
                     </div>
-                    <div className="mainDetailSingleContainer">
-                      <p className="detailHeader">Beds</p>
-                      <p className="detailMetric">3</p>
+                    <div className="flexInner">
+                      <h4>Bath</h4>
+                      <p>2</p>
                     </div>
-                    <div className="mainDetailSingleContainer">
-                      <p className="detailHeader">Bath</p>
-                      <p className="detailMetric">2</p>
-                    </div>
-                    <div className="mainDetailSingleContainer">
-                      <p className="detailHeader">Sqft</p>
-                      <p className="detailMetric">1200</p>
+                    <div className="flexInner">
+                      <h4>Sqft</h4>
+                      <p>1200</p>
                     </div>
                   </div>
                   <div className="flex">
@@ -145,9 +141,11 @@ const Property = ({ property }) => {
                     </div>
                   </div>
                   <h3 className="header">County Information</h3>
-                  <div>
-                    <h4>Assessor Parcel Number</h4>
-                    <p>987345-345-11</p>
+                  <div className="flex">
+                    <div className="flexInner">
+                      <h4>Assessor Parcel Number</h4>
+                      <p>987345-345-11</p>
+                    </div>
                   </div>
                   <h3 className="header">Expenses</h3>
                   <h3 className="header">Maintenance</h3>
@@ -223,7 +221,54 @@ const Property = ({ property }) => {
                 </div>
               </div>
               <div className="slugContainerRight">
-                <div className="innerContainerRight"></div>
+                <div className="innerContainerRight">
+                  <div className="sectionSelectionOuterContainer">
+                    <div className="sectionSelectionContainer">
+                      <p className="sectionSelection">Property Details</p>
+                      <div className="sectionSelectionIcon"></div>
+                    </div>
+                    <div className="sectionSelectionContainer">
+                      <p className="sectionSelection">County Information</p>
+                      <div className="sectionSelectionIcon"></div>
+                    </div>
+                    <div className="sectionSelectionContainer">
+                      <p className="sectionSelection">Expenses</p>
+                      <div className="sectionSelectionIcon"></div>
+                    </div>
+                    <div className="sectionSelectionContainer">
+                      <p className="sectionSelection">Maintenance</p>
+                      <div className="sectionSelectionIcon"></div>
+                    </div>
+                    <div className="sectionSelectionContainer">
+                      <p className="sectionSelection">Capital Expendetures</p>
+                      <div className="sectionSelectionIcon"></div>
+                    </div>
+                    <div className="sectionSelectionContainer">
+                      <p className="sectionSelection">Rent Details</p>
+                      <div className="sectionSelectionIcon"></div>
+                    </div>
+                    <div className="sectionSelectionContainer">
+                      <p className="sectionSelection">Misc</p>
+                      <div className="sectionSelectionIcon"></div>
+                    </div>
+                    <div className="sectionSelectionContainer">
+                      <p className="sectionSelection">Insurance</p>
+                      <div className="sectionSelectionIcon"></div>
+                    </div>
+                    <div className="sectionSelectionContainer">
+                      <p className="sectionSelection">Tenants</p>
+                      <div className="sectionSelectionIcon"></div>
+                    </div>
+                    <div className="sectionSelectionContainer">
+                      <p className="sectionSelection">Neighbors</p>
+                      <div className="sectionSelectionIcon"></div>
+                    </div>
+                    <div className="sectionSelectionContainer">
+                      <p className="sectionSelection">Comparables</p>
+                      <div className="sectionSelectionIcon"></div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
             </LayoutTwo>

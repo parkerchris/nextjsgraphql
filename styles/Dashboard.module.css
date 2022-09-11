@@ -5,30 +5,112 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    overflow-y: scroll;
+}
+
+.innerContainer {
+    margin-top: 4rem;
+    height: 100%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.intro {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
 }
 
 .analyticsContainer {
-    width: 60%;
-    height: 70px;
+    height: 700px;
+    width: 1200px;
+    background-color: rgb(247, 247, 247);
+    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px; */
+    border-radius: 12px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 500px 1fr;
+    grid-template-areas: 
+        "graph graph graph graph graph graph"
+        "portfolio equity debt rent expenses cashflow";
+    gap: 0.5rem;
+    overflow: hidden;
+}
+
+.graph {
+    grid-area: graph;
+    background-color: white;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    margin-top: 100px;
+    justify-content: center;
+    flex-direction: column;
 }
 
-.singleAnalyticsContainer {
-    padding-left: 1rem;
-    border-right: 1px solid black;
-    height: 100%;
-    width: 100%;
+.portfolio {
+    grid-area: portfolio;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
-.h3 {
-    font-size: 0.9rem;
-    font-weight: 600;
+.debt {
+    grid-area: debt;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
-.p {
-    font-size: 1.3rem;
+.equity {
+    grid-area: equity;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.rent {
+    grid-area: rent;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.expenses {
+    grid-area: expenses;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.cashflow {
+    grid-area: cashflow;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.value {
+    color: rgb(34,34,34);
     font-weight: 900;
+    font-size: 1.8rem;
+}
+
+.title {
+    color: var(--font-gray);
+    font-weight: 500;
+    font-size: 1rem;
 }
