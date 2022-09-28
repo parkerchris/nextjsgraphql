@@ -4,6 +4,7 @@ import Layout from "../../components/Layout"
 import Image from 'next/image'
 import kentfield from '../../public/kentfield.jpg'
 import LayoutTwo from "../../components/LayoutTwo"
+import LayoutThree from '../../components/LayoutThree'
 
 export const getServerSideProps = async (pageContext) => {
     
@@ -78,7 +79,7 @@ const Property = ({ property }) => {
     console.log(property)
 
     return (
-            <LayoutTwo>
+            <LayoutThree>
               <div className="slugMainContainer">
               <div className="slugContainerLeft">
                 <div className="innerContainerLeft">
@@ -97,8 +98,7 @@ const Property = ({ property }) => {
                       <p>100%</p>
                     </div>
                   </div>
-
-                 
+               
 {/* 
                   <div className="graphAndCardContainer">
                     <div className="graphContainer"></div>
@@ -271,7 +271,7 @@ const Property = ({ property }) => {
                 </div>
               </div>
             </div>
-            </LayoutTwo>
+            </LayoutThree>
     )
 }
 

@@ -3,10 +3,11 @@ import LayoutTwo from '../components/LayoutTwo'
 import MaintenanceCard from '../components/MaintenanceCard'
 import styles from '../styles/maintenance.module.css'
 import ContentHeader from '../components/ContentHeader'
+import LayoutThree from '../components/LayoutThree'
 
 export default function Maintenance() {
     return (
-        <LayoutTwo>
+        <LayoutThree>
             <div className={styles.mainContentContainer}>
                 <div className={styles.innerContainer}>
                     <ContentHeader/>
@@ -20,6 +21,6 @@ export default function Maintenance() {
                 </div>
 
             </div>
-        </LayoutTwo>
+        </LayoutThree>
     )
 }
